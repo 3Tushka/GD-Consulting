@@ -1,0 +1,95 @@
+@import '../../utils/variables.scss';
+
+.purpouse {
+    margin: 100px 0;
+
+    .purpouse-box {
+
+        display: flex;
+        justify-content: center;
+
+        .purpouse-content {
+            position: relative;
+            text-align: center;
+            max-width: 1200px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 72px;
+
+            &__title {
+                text-align: center;
+                font-family: $garamong-font;
+                font-size: 120px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130px;
+            }
+
+            &__subtitle {
+                text-align: center;
+                font-family: $mulish-font;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 40px;
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
+
+    .groupe {
+        position: relative;
+
+        .groupe-one {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__packet {
+                background-image: url("../../assets/icons/Group 512567.png");
+                background-position: 0% -30%;
+                background-repeat: no-repeat;
+                background-size: 390px;
+                width: 30%;
+                height: 350px;
+                z-index: 4;
+            }
+
+            &__stars {
+                background-image: url("../../assets/icons/Group 512569.svg");
+                background-position: 0% 30%;
+                background-repeat: no-repeat;
+                background-size: 82.433px;
+                width: 10%;
+            }
+        }
+
+        .groupe-two {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__bills {
+                background-image: url("../../assets/icons/Frame 512588.png");
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: 555px;
+                width: 100%;
+                height: 330px;
+            }
+
+            &__vector {
+                background-image: url("../../assets/icons/Vector 2665.svg");
+                background-position: left;
+                background-repeat: no-repeat;
+                background-size: 500px;
+                width: 32%;
+                height: 330px;
+            }
+        }
+    }
+}

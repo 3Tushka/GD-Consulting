@@ -1,0 +1,149 @@
+@import '../../utils/variables.scss';
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 40px 100px;
+
+    .navbar-logo {
+        max-width: 307px;
+        height: 60px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    li {
+        font-family: $mulish-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+
+        padding: 0 20px;
+    }
+
+    &__smallscreen {
+        display: none;
+
+        .burger-icon {
+            font-size: 26px;
+        }
+    }
+}
+
+
+@media screen and (max-width:1400px) {
+
+    .navbar {
+        margin: 30px 50px;
+
+        .navbar-logo {
+            max-width: 214px;
+        }
+
+        li {
+            font-size: 20px;
+            padding: 0 15px;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .navbar {
+
+        margin: 20px;
+
+        .navbar-links {
+            display: none;
+        }
+
+        &__smallscreen {
+            display: block;
+        }
+
+        .navbar__smallscreen_overlay {
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #fff;
+            transform: 0.9s ease;
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+
+            .smallscreen-box {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                margin-bottom: 60px;
+
+                .close-icon {
+                    font-size: 26px;
+                }
+            }
+        }
+
+        .smallscreen-content {
+
+            display: flex;
+            justify-content: space-evenly;
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                li {
+                    padding: 0;
+                }
+
+                &__content {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    font-family: $mulish-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px) {
+
+    .navbar {
+        margin-bottom: 50px;
+
+        .smallscreen-content {
+            flex-direction: column;
+            gap: 20px;
+
+            &__item:nth-child(1) {
+                padding-bottom: 40px;
+                border-bottom: 1px solid #A0A8B5;
+            }
+
+            &__item:nth-child(3) {
+                gap: 10px;
+                align-items: center;
+            }
+
+            .smallscreen-divider {
+                display: none;
+            }
+        }
+    }
+}
