@@ -1,0 +1,51 @@
+@import "../../utils/variables.scss";
+
+.offers {
+    margin: 0 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__item {
+        padding: 48px 88px;
+        max-width: 572px;
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+        font-family: $garamong-font;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: 3px;
+    }
+
+    &__text {
+        max-width: 400px;
+
+        font-family: $mulish-font;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+        /* 154.545% */
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

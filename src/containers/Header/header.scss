@@ -49,27 +49,6 @@
 
         .header-button {
             width: fit-content;
-
-            .buttonLarge {
-                padding: 16px 53px;
-                border-radius: 90px;
-                border: 1px solid black;
-
-                text-align: center;
-                font-family: $mulish-font;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 28px;
-
-                transition: 0.2s ease-out;
-            }
-
-            .buttonLarge:hover {
-                color: #fff;
-                background-color: #000000;
-                box-shadow: 0 0 2em 2em rgba(#000000, 0);
-            }
         }
     }
 

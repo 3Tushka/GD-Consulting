@@ -1,0 +1,15 @@
+@import "../../utils/variables.scss";
+
+.title {
+    margin: 52px 102px;
+    padding: 80px 48px;
+
+    &__content {
+        font-family: $garamong-font;
+        font-size: 82px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 80px;
+        /* 111.111% */
+    }
+}

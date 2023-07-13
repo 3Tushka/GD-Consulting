@@ -4,7 +4,12 @@
     margin: 100px 0;
 
     .purpouse-box {
-
+        background-image: url("../../assets/icons/Group 512567.png");
+        background-position: 0% -30%;
+        background-repeat: no-repeat;
+        background-size: 390px;
+        height: 650px;
+        z-index: 4;
         display: flex;
         justify-content: center;
 
@@ -13,9 +18,17 @@
             text-align: center;
             max-width: 1200px;
 
+            background-image: url("../../assets/icons/Group 512569.svg");
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: 82.433px;
+
+            top: 200px;
+
             display: flex;
             flex-direction: column;
             gap: 72px;
+
 
             &__title {
                 text-align: center;
@@ -44,29 +57,21 @@
     .groupe {
         position: relative;
 
-        .groupe-one {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+        // .groupe-one {
+        //     display: flex;
+        //     flex-direction: row;
+        //     justify-content: space-between;
 
-            &__packet {
-                background-image: url("../../assets/icons/Group 512567.png");
-                background-position: 0% -30%;
-                background-repeat: no-repeat;
-                background-size: 390px;
-                width: 30%;
-                height: 350px;
-                z-index: 4;
-            }
-
-            &__stars {
-                background-image: url("../../assets/icons/Group 512569.svg");
-                background-position: 0% 30%;
-                background-repeat: no-repeat;
-                background-size: 82.433px;
-                width: 10%;
-            }
-        }
+        // &__packet {
+        //     background-image: url("../../assets/icons/Group 512567.png");
+        //     background-position: 0% -30%;
+        //     background-repeat: no-repeat;
+        //     background-size: 390px;
+        //     width: 30%;
+        //     height: 350px;
+        //     z-index: 4;
+        // }
+        // }
 
         .groupe-two {
             display: flex;
