@@ -1,0 +1,26 @@
+.coolLine {
+    margin: 100px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: url("../../assets//shape/stars.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__left {
+        position: relative;
+        right: 300px;
+        transform: rotate(15deg);
+
+        max-width: 60%;
+    }
+
+    &__right {
+        max-width: 44%;
+        position: relative;
+        bottom: 100px;
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,37 @@
+@import '../../utils/variables.scss';
+
+.gridItem {
+    padding: 64px 56px;
+    border: 2px solid #000;
+    border-radius: 48px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+
+    background-color: #eee;
+
+    &__text {
+        font-family: $mulish-font;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        /* 153.846% */
+        width: 100%;
+    }
+
+    &__button {
+
+        .gridButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 112px;
+            height: 80px;
+            border-radius: 64px;
+            background: #FFF;
+        }
+    }
+}

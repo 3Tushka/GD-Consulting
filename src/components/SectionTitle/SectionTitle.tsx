@@ -1,7 +1,7 @@
 import "./sectionTitle.scss";
 
 type SectionTitleProps = {
-    text: string;
+    text?: string;
 }
 
 export const SectionTitle = (props: SectionTitleProps) => {

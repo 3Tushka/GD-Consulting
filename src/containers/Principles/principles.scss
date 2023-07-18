@@ -1,0 +1,28 @@
+@import '../../utils/variables.scss';
+
+.vectorStar {
+    margin: 52px 102px;
+    padding: 80px 48px;
+}
+
+.principles {
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(463px, 1fr));
+
+    &__title {
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        &__h2 {
+            font-family: $garamong-font;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 80px;
+            /* 111.111% */
+        }
+    }
+}
