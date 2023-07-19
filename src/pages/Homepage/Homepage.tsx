@@ -1,6 +1,7 @@
 import { CoolLine } from "../../components/CoolLine/CoolLine"
 import { Navbar } from "../../components/Navbar/Navbar"
 import { Clients } from "../../containers/Clients/Clients"
+import { ContactForm } from "../../containers/ContactForm/ContactForm"
 import { Experience } from "../../containers/Experience/Experience"
 import { Header } from "../../containers/Header/Header"
 import { Offers } from "../../containers/Offers/Offers"
@@ -20,6 +21,8 @@ export const Homepage = () => {
       <Principles />
       <CoolLine />
       <Clients />
+      <ContactForm />
+      <CoolLine />
     </>
   )
 }
