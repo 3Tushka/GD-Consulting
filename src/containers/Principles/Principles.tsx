@@ -1,5 +1,4 @@
 import { GridItem } from "../../components/GridItem/GridItem";
-import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import vectorStar from '../../assets/icons/Vector 7.svg';
 import './principles.scss'
 

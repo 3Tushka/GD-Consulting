@@ -1,13 +1,15 @@
 import { CoolLine } from "../../components/CoolLine/CoolLine"
 import { Navbar } from "../../components/Navbar/Navbar"
-import { Clients } from "../../containers/Clients/Clients"
+import { MiddleContent } from "../../containers/MiddleContent/MiddleContent"
 import { ContactForm } from "../../containers/ContactForm/ContactForm"
 import { Experience } from "../../containers/Experience/Experience"
+import { Footer } from "../../containers/Footer/Footer"
 import { Header } from "../../containers/Header/Header"
 import { Offers } from "../../containers/Offers/Offers"
 import { Principles } from "../../containers/Principles/Principles"
 import { Purpouse } from "../../containers/Purpouse/Purpouse"
 import { ServicesHomepage } from "../../containers/ServicesHomepage/ServicesHomepage"
+import { SocalMedia } from "../../containers/SocialMedia/SocalMedia"
 
 export const Homepage = () => {
   return (
@@ -20,9 +22,11 @@ export const Homepage = () => {
       <Experience />
       <Principles />
       <CoolLine />
-      <Clients />
+      <MiddleContent />
       <ContactForm />
       <CoolLine />
+      <SocalMedia />
+      <Footer />
     </>
   )
 }

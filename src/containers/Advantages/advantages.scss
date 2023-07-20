@@ -1,0 +1,47 @@
+@import '../../utils/variables.scss';
+
+.advantages {
+    margin: 200px 100px;
+    max-width: 1720px;
+
+    &__upper {
+        display: flex;
+        justify-content: space-between;
+
+        &__content {
+            padding: 48px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            max-width: 1051px;
+
+            &__title {
+                font-family: $garamong-font;
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 80px;
+                /* 111.111% */
+            }
+
+            &__text {
+                font-family: $mulish-font;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 34px;
+                /* 154.545% */
+            }
+        }
+
+        &__item {
+            max-width: 542px;
+        }
+    }
+
+    &__lower {
+        display: flex;
+        flex-direction: row;
+    }
+}

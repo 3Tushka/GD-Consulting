@@ -1,0 +1,46 @@
+@import '../../utils/variables.scss';
+
+.inlineCards {
+    margin: 50px 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+
+    &__item {
+        border-radius: 48px;
+        padding: 64px 80px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+
+        max-width: 50%;
+
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+        &__title {
+            max-width: 80%;
+
+            font-family: $garamong-font;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 64px;
+            /* 128% */
+        }
+
+        &__text {
+            align-self: stretch;
+
+            font-family: $mulish-font;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 34px;
+            /* 154.545% */
+        }
+    }
+}

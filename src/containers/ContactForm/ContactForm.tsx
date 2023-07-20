@@ -16,22 +16,25 @@ export const ContactForm = () => {
 
     return (
         <>
+            <h2 className="contact-title">
+                Let’s work together!
+            </h2>
             <form className='form' onSubmit={handleSubmit(onSubmit)}>
-                <input placeholder='Your name' {...register("name", { required: true, pattern: /^[A-Za-z]+$/i })} />
+                <input className='form__name' placeholder='Your name' {...register("name", { required: true, pattern: /^[A-Za-z]+$/i })} />
 
                 {errors?.name?.type === "required" && <p>This field is required</p>}
                 {errors?.name?.type === "pattern" && (
                     <p>Alphabetical characters only</p>
                 )}
 
-                <input type='email' placeholder='Your Email' {...register("email", { pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/, required: true })} />
+                <input className='form__email' type='email' placeholder='Your Email' {...register("email", { pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/, required: true })} />
                 {errors?.email?.type === "required" && <p>This field is required</p>}
                 {errors?.email?.type === "pattern" && (
                     <p>Alphabetical characters only</p>
                 )}
 
-                <input placeholder='Tell more about your request' {...register("text")} />
-                <input type="submit" />
+                <input className='form__text' placeholder='Tell more about your request' {...register("text")} />
+                <input type="submit" value={"Send"} />
             </form>
         </>
     )

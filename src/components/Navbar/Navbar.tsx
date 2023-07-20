@@ -9,9 +9,9 @@ import Logo from "../../assets/Logo-hor.svg";
 const Menu = () => (
     <>
         <li><Link to="/src/pages/Account-Serv">Accounting Services</Link></li>
-        <li><Link to="/src/pages/About">Tax Consulting</Link></li>
-        <li><Link to="/src/pages/Team">Financial Consulting</Link></li>
-        <li><Link to="/src/pages/FAQ">About Us</Link></li>
+        <li><Link to="/src/pages/Tax-Consulting">Tax Consulting</Link></li>
+        <li><Link to="/src/pages/Financial-Consulting">Financial Consulting</Link></li>
+        <li><Link to="/src/pages/About-Us">About Us</Link></li>
         <li><Link to="/src/pages/Contact">Contact</Link></li>
     </>
 )
