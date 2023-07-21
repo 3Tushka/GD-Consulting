@@ -1,3 +1,4 @@
+import { ButtonLarge } from '../Buttons/ButtonLarge/ButtonLarge';
 import './services.scss';
 
 type ServicesProps = {
@@ -20,9 +21,12 @@ export const Services = (props: ServicesProps) => {
                 </div>
                 <div className="services__right">
                     <div className="services__right__image">
-                        {props.servicesImage}
+                        <img src={props.servicesImage} alt="servicesImage" />
                     </div>
                 </div>
+            </div>
+            <div className="services-button">
+                <ButtonLarge text='Get free сonsultations' />
             </div>
         </>
     )
