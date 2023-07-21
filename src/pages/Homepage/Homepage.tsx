@@ -1,6 +1,6 @@
 import { CoolLine } from "../../components/CoolLine/CoolLine"
 import { Navbar } from "../../components/Navbar/Navbar"
-import { MiddleContent } from "../../containers/MiddleContent/MiddleContent"
+import { Addvertise } from "../../containers/Addvertise/Addvertise"
 import { ContactForm } from "../../containers/ContactForm/ContactForm"
 import { Experience } from "../../containers/Experience/Experience"
 import { Footer } from "../../containers/Footer/Footer"
@@ -22,7 +22,7 @@ export const Homepage = () => {
       <Experience />
       <Principles />
       <CoolLine />
-      <MiddleContent />
+      <Addvertise />
       <ContactForm />
       <CoolLine />
       <SocalMedia />
