@@ -2,7 +2,7 @@ import './gridItem.scss';
 import ArrowRight from '../../assets/icons/Frame 512533.svg';
 
 type GridItemType = {
-    gridItemText: string,
+    gridItemText?: string,
 };
 export const GridItem = (props: GridItemType) => {
     return (

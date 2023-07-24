@@ -46,3 +46,28 @@
         /* 140% */
     }
 }
+
+@media screen and (min-width:320px) and (max-width:640px) {
+    .footer {
+        margin-top: 90px;
+        padding: 30px;
+
+        &__upper {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__links {
+            flex-direction: column;
+            text-align: center;
+            gap: 28px;
+        }
+
+        &__lower {
+            flex-direction: column-reverse;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+        }
+    }
+}

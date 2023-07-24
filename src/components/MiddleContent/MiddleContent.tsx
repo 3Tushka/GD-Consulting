@@ -2,7 +2,7 @@ import './middleContent.scss';
 
 type MiddleContentProps = {
     MiddleContentTitle?: string,
-    MiddleContentImage?: string,
+    MiddleContentImage?: string | null,
     MiddleContentText?: string,
 }
 
@@ -14,9 +14,12 @@ export const MiddleContent = (props: MiddleContentProps) => {
                     {props.MiddleContentTitle}
                 </div>
             </div>
-            <div className="middleContent__image">
-                <img src={props.MiddleContentImage} alt="middleContentImage" />
-            </div>
+            {
+                props.MiddleContentImage &&
+                < div className="middleContent__image">
+                    <img src={props.MiddleContentImage} />
+                </div>
+            }
             <div className="middleContent__text">
                 {props.MiddleContentText}
             </div>
