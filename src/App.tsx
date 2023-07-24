@@ -12,11 +12,11 @@ function App() {
     <>
       <Routes>
         <Route index element={<Homepage />} />
-        <Route path='/src/pages/Account-Serv' element={<AccountServ />} />
-        <Route path='/src/pages/Tax-Consulting' element={<TaxConsulting />} />
-        <Route path='/src/pages/Financial-Consulting' element={<FinConsulting />} />
-        <Route path='/src/pages/About-Us' element={<AboutUs />} />
-        <Route path='/src/pages/Contact' element={<Contact />} />
+        <Route path='/Account-Serv' element={<AccountServ />} />
+        <Route path='/Tax-Consulting' element={<TaxConsulting />} />
+        <Route path='/Financial-Consulting' element={<FinConsulting />} />
+        <Route path='/About-Us' element={<AboutUs />} />
+        <Route path='/Contact' element={<Contact />} />
       </Routes>
     </>
   )

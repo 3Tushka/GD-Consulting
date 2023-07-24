@@ -6,11 +6,11 @@ import { Divider } from 'antd';
 
 const FooterMenu = () => (
     <>
-        <li><Link to="/src/pages/Account-Serv">Accounting Services</Link></li>
-        <li><Link to="/src/pages/About">Tax Consulting</Link></li>
-        <li><Link to="/src/pages/Team">Financial Consulting</Link></li>
-        <li><Link to="/src/pages/FAQ">About Us</Link></li>
-        <li><Link to="/src/pages/Contact">Contact</Link></li>
+        <li><Link to="/Account-Serv">Accounting Services</Link></li>
+        <li><Link to="/Tax-Consulting">Tax Consulting</Link></li>
+        <li><Link to="/Financial-Consulting">Financial Consulting</Link></li>
+        <li><Link to="/About-Us">About Us</Link></li>
+        <li><Link to="/Contact">Contact</Link></li>
     </>
 )
 
@@ -20,7 +20,7 @@ export const Footer = () => {
             <div className="footer">
                 <div className="footer__upper">
                     <div className="footer__logo">
-                        <img src={footerLogo} alt="footerLogo" />
+                        <Link to="/"><img src={footerLogo} alt="footer-logo" className="image-wrapp" /></Link>
                     </div>
                     <div className="footer__links">
                         <FooterMenu />

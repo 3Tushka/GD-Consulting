@@ -8,11 +8,11 @@ import Logo from "../../assets/Logo-hor.svg";
 
 const Menu = () => (
     <>
-        <li><Link to="/src/pages/Account-Serv">Accounting Services</Link></li>
-        <li><Link to="/src/pages/Tax-Consulting">Tax Consulting</Link></li>
-        <li><Link to="/src/pages/Financial-Consulting">Financial Consulting</Link></li>
-        <li><Link to="/src/pages/About-Us">About Us</Link></li>
-        <li><Link to="/src/pages/Contact">Contact</Link></li>
+        <li><Link to="/Account-Serv">Accounting Services</Link></li>
+        <li><Link to="/Tax-Consulting">Tax Consulting</Link></li>
+        <li><Link to="/Financial-Consulting">Financial Consulting</Link></li>
+        <li><Link to="/About-Us">About Us</Link></li>
+        <li><Link to="/Contact">Contact</Link></li>
     </>
 )
 
@@ -24,7 +24,7 @@ export const Navbar = () => {
         <>
             <div className="navbar">
                 <div className="navbar-logo">
-                    <img src={Logo} alt="navbar-logo" className="image-wrapp" />
+                    <Link to="/"><img src={Logo} alt="navbar-logo" className="image-wrapp" /></Link>
                 </div>
                 <div className="navbar-links">
                     <Menu />
@@ -37,7 +37,7 @@ export const Navbar = () => {
                         <div className="navbar__smallscreen_overlay">
                             <div className="smallscreen-box">
                                 <div className="navbar-logo">
-                                    <img src={Logo} alt="navbar-logo" className="image-wrapp" />
+                                    <Link to="/"><img src={Logo} alt="navbar-logo" className="image-wrapp" /></Link>
                                 </div>
                                 <div className="navbar-close">
                                     <CloseOutlined color="#000" onClick={() => setToggleMenu(false)} className="close-icon" />
