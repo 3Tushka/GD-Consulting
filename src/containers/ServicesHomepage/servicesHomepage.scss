@@ -124,3 +124,24 @@
         }
     }
 }
+
+
+
+@media screen and (min-width:320px) and (max-width:640px) {
+    .serviceHome {
+        margin: 50px 10px;
+
+        &__item {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        &__item:nth-child(2) {
+            flex-direction: column;
+        }
+
+        &__content {
+            padding: 0;
+        }
+    }
+}

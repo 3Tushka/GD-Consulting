@@ -30,3 +30,34 @@
         /* 154.545% */
     }
 }
+
+@media screen and (min-width:320px) and (max-width:640px) {
+    .card {
+        padding: 50px 10px;
+
+        display: flex;
+        flex-direction: column;
+
+        &__image {
+            text-align: center;
+
+            img {
+                width: 95px;
+                height: 95px;
+            }
+        }
+
+        &__title {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.44px;
+        }
+
+        &__text {
+            max-width: 100%;
+            font-size: 16px;
+            line-height: 160%;
+        }
+    }
+}
