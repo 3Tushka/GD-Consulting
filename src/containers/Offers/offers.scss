@@ -18,14 +18,16 @@
 }
 
 
-@media screen and (min-width:320px) and (max-width:640px) {
+@media screen and (min-width:320px) and (max-width:1200px) {
     .sectionWrapper {
         display: flex;
         flex-direction: column;
-
+        align-items: center;
+        gap: 0;
         margin: 50px 10px;
 
         &__container {
+            width: 100%;
             display: flex;
             flex-direction: column;
         }

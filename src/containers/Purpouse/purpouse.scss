@@ -28,10 +28,10 @@
             display: flex;
             flex-direction: column;
             gap: 72px;
+            text-align: center;
 
 
             &__title {
-                text-align: center;
                 font-family: $garamong-font;
                 font-size: 120px;
                 font-style: normal;
@@ -40,7 +40,6 @@
             }
 
             &__subtitle {
-                text-align: center;
                 font-family: $mulish-font;
                 font-size: 26px;
                 font-style: normal;
@@ -62,15 +61,15 @@
         //     flex-direction: row;
         //     justify-content: space-between;
 
-        // &__packet {
-        //     background-image: url("../../assets/icons/Group 512567.png");
-        //     background-position: 0% -30%;
-        //     background-repeat: no-repeat;
-        //     background-size: 390px;
-        //     width: 30%;
-        //     height: 350px;
-        //     z-index: 4;
-        // }
+        //     &__packet {
+        //         background-image: url("../../assets/icons/Group 512567.png");
+        //         background-position: 0% -30%;
+        //         background-repeat: no-repeat;
+        //         background-size: 390px;
+        //         width: 30%;
+        //         height: 350px;
+        //         z-index: 4;
+        //     }
         // }
 
         .groupe-two {
@@ -100,7 +99,52 @@
 }
 
 @media screen and (min-width:320px) and (max-width:640px) {
-    .groupe{
-        
+    .purpouse {
+        margin: 20px 0;
+
+        .purpouse-box {
+            background: none;
+            background-image: url("../../assets/icons/Group 512569.svg");
+            background-position: 15% 12%;
+            background-repeat: no-repeat;
+            background-size: 82px;
+
+            .purpouse-content {
+                background: none;
+                padding: 0 20px;
+
+                &__title {
+                    font-size: 42px;
+                    line-height: normal;
+                }
+
+                &__subtitle {
+                    font-size: 22px;
+                    line-height: 160%;
+
+                    gap: 50px;
+                }
+            }
+        }
+
+        .groupe {
+            position: relative;
+
+            .groupe-two {
+
+                &__bills {
+                    background-image: url("../../assets/icons/Frame 512588.png");
+                    background-position: 0 100%;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    width: 100%;
+                    height: 350px;
+                }
+
+                &__vector {
+                    display: none;
+                }
+            }
+        }
     }
 }

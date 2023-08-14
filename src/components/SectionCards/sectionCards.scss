@@ -2,7 +2,7 @@
 
 .card {
     padding: 48px 88px;
-    max-width: 572px;
+    width: 572px;
 
     &__image {
         width: 100%;
@@ -34,7 +34,7 @@
 @media screen and (min-width:320px) and (max-width:640px) {
     .card {
         padding: 50px 10px;
-
+        width: 100%;
         display: flex;
         flex-direction: column;
 
@@ -57,6 +57,37 @@
         &__text {
             max-width: 100%;
             font-size: 16px;
+            line-height: 160%;
+        }
+    }
+}
+
+
+@media screen and (min-width:641px) and (max-width:1200px) {
+    .card {
+        padding: 40px 10px;
+        width: 100%;
+
+        &__image {
+            text-align: left;
+            margin-bottom: 20px;
+
+            img {
+                width: 125px;
+                height: 125px;
+            }
+        }
+
+        &__title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.44px;
+        }
+
+        &__text {
+            max-width: 100%;
+            font-size: 22px;
             line-height: 160%;
         }
     }

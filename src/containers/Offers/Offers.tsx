@@ -11,17 +11,19 @@ import { SectionCards } from '../../components/SectionCards/SectionCards';
 export const Offers = () => {
     return (
         <>
-            <SectionTitle text='What sets us apart' />
+            <div className="offers">
+                <SectionTitle text='What sets us apart' />
 
-            <div className="sectionWrapper">
-                <div className="sectionWrapper__container">
-                    <SectionCards sectionCardImage={peopleImg} sectionCardTitle='Reliable Connections' sectionCardText='We prioritize understanding client needs, supporting them beyond advice, anticipating business issues, emphasizing clear communication, and hands-on management.' />
-                    <SectionCards sectionCardImage={umbrellaImg} sectionCardTitle='Professional Responsibility' sectionCardText="We foster honest relationships with clients and colleagues, nurturing mutual understanding, support, and comprehending individual needs." />
-                    <SectionCards sectionCardImage={womanImg} sectionCardTitle='Close Client Rapport' sectionCardText='We practice responsibility and professionalism, adhering to high standards, providing comprehensive advice, engaging skilled specialists, and valuing confidentiality and ethics.' />
-                </div>
+                <div className="sectionWrapper">
+                    <div className="sectionWrapper__container">
+                        <SectionCards sectionCardImage={peopleImg} sectionCardTitle='Reliable Connections' sectionCardText='We prioritize understanding client needs, supporting them beyond advice, anticipating business issues, emphasizing clear communication, and hands-on management.' />
+                        <SectionCards sectionCardImage={umbrellaImg} sectionCardTitle='Professional Responsibility' sectionCardText="We foster honest relationships with clients and colleagues, nurturing mutual understanding, support, and comprehending individual needs." />
+                        <SectionCards sectionCardImage={womanImg} sectionCardTitle='Close Client Rapport' sectionCardText='We practice responsibility and professionalism, adhering to high standards, providing comprehensive advice, engaging skilled specialists, and valuing confidentiality and ethics.' />
+                    </div>
 
-                <div className="sectionWrapper__button">
-                    <ButtonLarge text='Get more consultation' />
+                    <div className="sectionWrapper__button">
+                        <ButtonLarge text='Get more consultation' />
+                    </div>
                 </div>
             </div>
         </>

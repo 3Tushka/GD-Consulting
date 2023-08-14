@@ -115,10 +115,10 @@ export const ServicesHomepage = () => {
                                 Assistance in resolving business disputes
                             </li>
                         </ul>
+                        <div className="serviceHome__button">
+                            <ButtonLarge text="More info" />
+                        </div>
                     </div>
-                </div>
-                <div className="serviceHome__button">
-                    <ButtonLarge text="More info" />
                 </div>
             </div>
         </>
