@@ -5,7 +5,7 @@ import redImage from '../../assets/images/Frame 512537.png'
 import yellowImage from '../../assets/images/Frame 512538.png';
 
 import "./servicesHomepage.scss";
-import { ButtonLarge } from "../../components/Buttons/ButtonLarge/ButtonLarge";
+import { motion } from 'framer-motion';
 
 export const ServicesHomepage = () => {
     return (
@@ -14,16 +14,40 @@ export const ServicesHomepage = () => {
 
             <div className="serviceHome">
                 <div className="serviceHome__item">
-                    <div className="serviceHome__image image-wrapp">
+                    <motion.div className="serviceHome__image"
+                        transition={{ ease: "easeIn", duration: 0.5, delay: 0.5 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={{
+                            visible: { opacity: 1, scale: 1 },
+                            hidden: { opacity: 0, scale: 0.8 }
+                        }}>
                         <img src={yellowImage} alt="yellowService" />
-                    </div>
+                    </motion.div>
                     <div className="serviceHome__content">
                         <div className="serviceHome__content-title">
-                            <h3 className="serviceHome__content-title-h3">
+                            <motion.h3 className="serviceHome__content-title-h3"
+                                transition={{ ease: "easeIn", duration: 0.5, delay: 1 }}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true }}
+                                variants={{
+                                    visible: { opacity: 1, scale: 1 },
+                                    hidden: { opacity: 0, scale: 1 }
+                                }}>
                                 Financial Consulting
-                            </h3>
+                            </motion.h3>
                         </div>
-                        <ul className="serviceHome__list">
+                        <motion.ul className="serviceHome__list"
+                            transition={{ ease: "easeIn", duration: 0.2, delay: 1.5 }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={{
+                                visible: { opacity: 1, scale: 1 },
+                                hidden: { opacity: 0, scale: 1 }
+                            }}>
                             <li className="serviceHome__list-item">
                                 Financial Modelling and Business Planning
                             </li>
@@ -42,24 +66,45 @@ export const ServicesHomepage = () => {
                             <li className="serviceHome__list-item">
                                 Internal & External audit
                             </li>
-                        </ul>
-                        <div className="serviceHome__button">
-                            <ButtonLarge text="More info" />
-                        </div>
+                        </motion.ul>
                     </div>
                 </div>
 
                 <div className="serviceHome__item">
-                    <div className="serviceHome__image image-wrapp">
+                    <motion.div className="serviceHome__image"
+                        transition={{ ease: "easeIn", duration: 0.5, delay: 0.5 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={{
+                            visible: { opacity: 1, scale: 1 },
+                            hidden: { opacity: 0, scale: 0.8 }
+                        }}>
                         <img src={redImage} alt="redService" />
-                    </div>
+                    </motion.div>
                     <div className="serviceHome__content">
                         <div className="serviceHome__content-title">
-                            <h3 className="serviceHome__content-title-h3">
+                            <motion.h3 className="serviceHome__content-title-h3"
+                                transition={{ ease: "easeIn", duration: 0.5, delay: 1 }}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true }}
+                                variants={{
+                                    visible: { opacity: 1, scale: 1 },
+                                    hidden: { opacity: 0, scale: 1 }
+                                }}>
                                 Tax Consulting
-                            </h3>
+                            </motion.h3>
                         </div>
-                        <ul className="serviceHome__list">
+                        <motion.ul className="serviceHome__list"
+                            transition={{ ease: "easeIn", duration: 0.2, delay: 1.5 }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={{
+                                visible: { opacity: 1, scale: 1 },
+                                hidden: { opacity: 0, scale: 1 }
+                            }}>
                             <li className="serviceHome__list-item">
                                 VAT Registration, Filing, Amendment, Audit
                             </li>
@@ -78,24 +123,45 @@ export const ServicesHomepage = () => {
                             <li className="serviceHome__list-item">
                                 Corporate tax consultancy
                             </li>
-                        </ul>
-                        <div className="serviceHome__button">
-                            <ButtonLarge text="More info" />
-                        </div>
+                        </motion.ul>
                     </div>
                 </div>
 
                 <div className="serviceHome__item">
-                    <div className="serviceHome__image image-wrapp">
+                    <motion.div className="serviceHome__image"
+                        transition={{ ease: "easeIn", duration: 0.5, delay: 0.5 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={{
+                            visible: { opacity: 1, scale: 1 },
+                            hidden: { opacity: 0, scale: 0.8 }
+                        }}>
                         <img src={greenImage} alt="greenService" />
-                    </div>
+                    </motion.div>
                     <div className="serviceHome__content">
                         <div className="serviceHome__content-title">
-                            <h3 className="serviceHome__content-title-h3">
-                                Accounting Services
-                            </h3>
+                            <motion.h3 className="serviceHome__content-title-h3"
+                                transition={{ ease: "easeIn", duration: 0.5, delay: 1 }}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true }}
+                                variants={{
+                                    visible: { opacity: 1, scale: 1 },
+                                    hidden: { opacity: 0, scale: 1 }
+                                }}>
+                                Financial Consulting
+                            </motion.h3>
                         </div>
-                        <ul className="serviceHome__list">
+                        <motion.ul className="serviceHome__list"
+                            transition={{ ease: "easeIn", duration: 0.2, delay: 1.5 }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={{
+                                visible: { opacity: 1, scale: 1 },
+                                hidden: { opacity: 0, scale: 1 }
+                            }}>
                             <li className="serviceHome__list-item">
                                 Managing full company’s accounting
                             </li>
@@ -114,13 +180,10 @@ export const ServicesHomepage = () => {
                             <li className="serviceHome__list-item">
                                 Assistance in resolving business disputes
                             </li>
-                        </ul>
-                        <div className="serviceHome__button">
-                            <ButtonLarge text="More info" />
-                        </div>
+                        </motion.ul>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

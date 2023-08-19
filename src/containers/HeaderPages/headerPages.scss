@@ -53,6 +53,28 @@
     }
 }
 
+@media screen and (min-width:1500px) and (max-width:1650px) {
+
+    .headerPages {
+        margin: 120px 20px;
+
+        &__left {
+            margin: 40px 86px;
+            max-width: 848px;
+
+            &__title {
+                font-size: 54px;
+            }
+
+            &__content {
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: 0.32px;
+            }
+        }
+    }
+}
+
 @media screen and (min-width:320px) and (max-width:640px) {
     .headerPages {
         margin: 120px 20px;

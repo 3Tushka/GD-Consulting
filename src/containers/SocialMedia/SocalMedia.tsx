@@ -3,8 +3,36 @@ import './socialMedia.scss';
 import whatsUp from '../../assets/icons/whats-up.svg';
 import telegram from '../../assets/icons/free-icon-telegram-1946547.svg';
 import { MailOutlined } from '@ant-design/icons';
+import { motion } from 'framer-motion'
 
 export const SocalMedia = () => {
+
+    const container = {
+        hidden: { opacity: 0, scale: 1 },
+        show: {
+            opacity: 1, scale: 1,
+            transition: {
+                duration: 0.5,
+                delay: 0.25,
+                staggerChildren: 0.5,
+            }
+        },
+    }
+
+    const item = {
+        hidden: {
+            opacity: 0,
+            y: -50,
+        },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.8,
+            }
+        }
+    }
+
     return (
         <>
             <div className="social">
@@ -14,28 +42,39 @@ export const SocalMedia = () => {
                     </h2>
                 </div>
 
-                <div className="social__media">
-                    <div className="social__media__item">
+                <motion.div className="social__media"
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
+                    variants={container}>
+
+                    <motion.div className="social__media__item"
+                        variants={item}
+                    >
                         <button className='whatsUp media-button'>
                             <img src={whatsUp} alt="whatsUp" />
                             <span>Whatsapp</span>
                         </button>
-                    </div>
+                    </motion.div>
 
-                    <div className="social__media__item">
+                    <motion.div className="social__media__item"
+                        variants={item}
+                    >
                         <button className='telegram media-button'>
                             <img src={telegram} alt="telegram" />
                             <span>Telegram</span>
                         </button>
-                    </div>
+                    </motion.div>
 
-                    <div className="social__media__item">
+                    <motion.div className="social__media__item"
+                        variants={item}
+                    >
                         <button className='mail media-button'>
                             <MailOutlined />
                             <span>E-mail</span>
                         </button>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
 
                 <div className="social__text">
                     <span>Click for a free consultation and confidently achieve financial goals. Empower your business with our expert services. Act now! </span>

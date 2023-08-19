@@ -12,13 +12,16 @@ export const ContactInfo = () => {
                 </div>
                 <div className="contactInfo__content">
                     <div className="contactInfo__content__item">
-                        <CompassOutlined style={{ fontSize: '32px' }} /> <span>19th floor The Exchange Tower, Business Bay, Dubai, United Arab Emirates</span>
+                        <i><CompassOutlined style={{ fontSize: '32px' }} /></i>
+                        <span>19th floor The Exchange Tower, Business Bay, Dubai, United Arab Emirates</span>
                     </div>
                     <div className="contactInfo__content__item">
-                        <PhoneOutlined style={{ fontSize: '32px' }} /> <span>+971 56 840 0795</span>
+                        <i><PhoneOutlined style={{ fontSize: '32px' }} /> </i>
+                        <span>+971 56 840 0795</span>
                     </div>
                     <div className="contactInfo__content__item">
-                        <MailOutlined style={{ fontSize: '32px' }} /> <span>hello@gdconsulting.ae</span>
+                        <i><MailOutlined style={{ fontSize: '32px' }} /></i>
+                        <span>hello@gdconsulting.ae</span>
                     </div>
                 </div>
             </div>
