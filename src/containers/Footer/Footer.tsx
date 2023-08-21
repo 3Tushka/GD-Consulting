@@ -17,14 +17,14 @@ const FooterMenu = () => (
 export const Footer = () => {
     return (
         <>
-            <div className="footer">
+            <footer className="footer">
                 <div className="footer__upper">
                     <div className="footer__logo">
                         <Link to="/"><img src={footerLogo} alt="footer-logo" className="image-wrapp" /></Link>
                     </div>
-                    <div className="footer__links">
+                    <ul className="footer__links">
                         <FooterMenu />
-                    </div>
+                    </ul>
                 </div>
                 <div className="footer__divider">
                     <Divider />
@@ -37,7 +37,7 @@ export const Footer = () => {
                         <a href="">Privacy Policy</a>
                     </div>
                 </div>
-            </div>
+            </footer>
         </>
     )
 }

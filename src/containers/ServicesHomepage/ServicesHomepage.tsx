@@ -15,7 +15,7 @@ export const ServicesHomepage = () => {
             <div className="serviceHome">
                 <div className="serviceHome__item">
                     <motion.div className="serviceHome__image"
-                        transition={{ ease: "easeIn", duration: 0.5, delay: 0.5 }}
+                        transition={{ ease: "easeIn", duration: 0.5, delay: 0.3 }}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
@@ -28,7 +28,7 @@ export const ServicesHomepage = () => {
                     <div className="serviceHome__content">
                         <div className="serviceHome__content-title">
                             <motion.h3 className="serviceHome__content-title-h3"
-                                transition={{ ease: "easeIn", duration: 0.5, delay: 1 }}
+                                transition={{ ease: "easeIn", duration: 0.3, delay: 0.5 }}
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true }}
@@ -40,7 +40,7 @@ export const ServicesHomepage = () => {
                             </motion.h3>
                         </div>
                         <motion.ul className="serviceHome__list"
-                            transition={{ ease: "easeIn", duration: 0.2, delay: 1.5 }}
+                            transition={{ ease: "easeIn", duration: 0.3, delay: 0.6 }}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}

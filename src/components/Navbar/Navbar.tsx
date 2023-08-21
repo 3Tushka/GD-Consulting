@@ -26,9 +26,9 @@ export const Navbar = () => {
                 <div className="navbar-logo">
                     <Link to="/"><img src={Logo} alt="navbar-logo" className="image-wrapp" /></Link>
                 </div>
-                <div className="navbar-links">
+                <ul className="navbar-links">
                     <Menu />
-                </div>
+                </ul>
 
                 <div className="navbar__smallscreen">
                     <MenuOutlined color="#000" onClick={() => setToggleMenu(true)} className="burger-icon" />

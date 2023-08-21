@@ -52,7 +52,7 @@ export const SocalMedia = () => {
                         variants={item}
                     >
                         <button className='whatsUp media-button'>
-                            <img src={whatsUp} alt="whatsUp" />
+                            <img src={whatsUp} alt="social WhatsUp" />
                             <span>Whatsapp</span>
                         </button>
                     </motion.div>
@@ -61,7 +61,7 @@ export const SocalMedia = () => {
                         variants={item}
                     >
                         <button className='telegram media-button'>
-                            <img src={telegram} alt="telegram" />
+                            <img src={telegram} alt="social Telegram" />
                             <span>Telegram</span>
                         </button>
                     </motion.div>
